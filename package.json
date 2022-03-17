@@ -33,7 +33,9 @@
     "publish:minor": "tsc && npm run build && npm version minor && npm publish",
     "publish:major": "tsc && npm run build && npm version major && npm publish",
     "publish:premajor": "tsc && npm run build && npm version premajor && npm publish",
-    "lint": "eslint --ext js,ts  --max-warnings 5"
+    "build:single": "node buildSingleFile.js",
+    "lint": "eslint --ext js,ts  --max-warnings 5",
+    "plop": "plop"
   },
   "devDependencies": {
     "@babel/core": "^7.17.7",
@@ -54,6 +56,7 @@
     "eslint-plugin-promise": "^4.3.1",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.6",
+    "plop": "^3.0.5",
     "prettier": "^2.5.1",
     "rollup": "^2.70.1",
     "rollup-plugin-babel": "^4.4.0",

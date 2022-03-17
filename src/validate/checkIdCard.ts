@@ -3,8 +3,7 @@
  * @param value
  */
 function checkIdCard(value: string): boolean {
-  const reg = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/;
-  return reg.test(value);
+  return /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/.test(value);
 }
 
 export default checkIdCard;
