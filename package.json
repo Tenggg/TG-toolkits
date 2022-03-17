@@ -41,6 +41,7 @@
     "@commitlint/config-conventional": "^16.2.1",
     "@typescript-eslint/eslint-plugin": "^5.14.0",
     "@typescript-eslint/parser": "^5.14.0",
+    "commitizen": "^4.2.4",
     "eslint": "^7.12.1",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^16.0.3",
