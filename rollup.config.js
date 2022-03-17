@@ -14,7 +14,7 @@ const formatName = 'TG';
 
 const extensions = ['.js', '.ts', '.json'];
 
-const bannerText = ` * TG-Utils v${pkg.version}\n` + ` * author Tenggg\n` + ' * javascript utils';
+const bannerText = ` * TG-toolkits v${pkg.version}\n` + ` * author Tenggg\n` + ' * javascript utils';
 
 // umd格式配置
 const config = {
