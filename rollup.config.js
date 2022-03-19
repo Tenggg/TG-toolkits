@@ -46,7 +46,7 @@ const config = {
 const [minUmd, es, cjs] = [merge({}, config), merge({}, config), merge({}, config)];
 
 // 将打包成umd格式的代码进行压缩
-minUmd.output.file = 'lib/tg-utils.umd.min.js';
+minUmd.output.file = 'lib/tg-toolkits.umd.min.js';
 minUmd.plugins.unshift(terser());
 
 // EsModule格式
