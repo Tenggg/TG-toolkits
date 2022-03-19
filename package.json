@@ -1,6 +1,6 @@
 {
   "name": "tg-toolkits",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "javaScript toolkits",
   "main": "lib/tg-utils.cjs.js",
   "module": "lib/tg-utils.esm.js",
