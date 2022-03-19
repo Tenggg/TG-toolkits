@@ -26,9 +26,9 @@ const config = {
   },
   plugins: [
     json(),
-    typescript(), // 解析TypeScript
+    typescript(),
     commonjs({
-      include: 'node_modules/**', // 包括
+      include: 'node_modules/**',
     }),
     resolve({
       extensions,

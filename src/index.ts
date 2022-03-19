@@ -68,6 +68,38 @@ import getType from './tools/getType';
  */
 import queryToStr from './url/queryToStr';
 
+export {
+  arrayFlat,
+  checkIdCard,
+  checkEmail,
+  exitFullscreen,
+  openFullScreen,
+  scrollToBottom,
+  scrollToTop,
+  scrollToElement,
+  getCookie,
+  setCookie,
+  removeCookie,
+  isAppleDevice,
+  isMobile,
+  isAndroidDevice,
+  osType,
+  getLocalStorage,
+  removeLocalStorage,
+  setLocalStorage,
+  randomNum,
+  camelFormat,
+  fistLetterUpper,
+  phoneFormat,
+  dateFormat,
+  getType,
+  queryToStr,
+  checkIPv6,
+  checkPostCode,
+  checkCNChars,
+  checkPhone,
+};
+
 export default {
   arrayFlat,
   checkIdCard,
