@@ -1,7 +1,7 @@
 /**
  * 退出浏览器全屏
  */
-function exitFullscreen() {
+function exitFullScreen() {
   const element: any = document;
   if (element.exitFullscreen) {
     element.exitFullscreen();
@@ -14,4 +14,4 @@ function exitFullscreen() {
   }
 }
 
-export default exitFullscreen;
+export default exitFullScreen;

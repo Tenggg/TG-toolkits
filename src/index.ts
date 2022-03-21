@@ -13,7 +13,7 @@ import checkPostCode from './validate/checkPostCode';
 /**
  * 浏览器操作
  */
-import exitFullscreen from './browser/exitFullscreen';
+import exitFullScreen from './browser/exitFullScreen';
 import openFullScreen from './browser/openFullScreen';
 import scrollToBottom from './browser/scrollToBottom';
 import scrollToTop from './browser/scrollToTop';
@@ -50,7 +50,7 @@ import randomNum from './number/randomNum';
  * 字符串操作
  */
 import camelFormat from './string/camelFormat';
-import fistLetterUpper from './string/fistLetterUpper';
+import firstLetterUpper from './string/firstLetterUpper';
 import phoneFormat from './string/phoneFormat';
 
 /**
@@ -72,7 +72,7 @@ export {
   arrayFlat,
   checkIdCard,
   checkEmail,
-  exitFullscreen,
+  exitFullScreen,
   openFullScreen,
   scrollToBottom,
   scrollToTop,
@@ -89,7 +89,7 @@ export {
   setLocalStorage,
   randomNum,
   camelFormat,
-  fistLetterUpper,
+  firstLetterUpper,
   phoneFormat,
   dateFormat,
   getType,
@@ -104,7 +104,7 @@ export default {
   arrayFlat,
   checkIdCard,
   checkEmail,
-  exitFullscreen,
+  exitFullScreen,
   openFullScreen,
   scrollToBottom,
   scrollToTop,
@@ -121,7 +121,7 @@ export default {
   setLocalStorage,
   randomNum,
   camelFormat,
-  fistLetterUpper,
+  firstLetterUpper,
   phoneFormat,
   dateFormat,
   getType,

@@ -5,7 +5,7 @@
  */
 // dateFormater('YYYY-MM-DD HH:mm:ss')
 // dateFormater('YYYYMMDDHHmmss')
-function dateFormat(formater: string, time: string | number) {
+function dateFormat(formater: string, time?: string | number) {
   const date = time ? new Date(+time) : new Date();
   const Y = date.getFullYear() + '';
   const M = date.getMonth() + 1;

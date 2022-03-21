@@ -2,7 +2,7 @@
  * 获取数据类型
  * @param value
  */
-function getType(value: string) {
+function getType<T>(value: T): string {
   if (value === null) {
     return value + '';
   }
