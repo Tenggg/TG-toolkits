@@ -1,16 +1,28 @@
 /**
- * 键值对拼接成URL参数
- * @param value
+ * 将对象转换成编码后的 url 字符串
+ * @param data
+ * @param isPrefix
  */
-interface Obj {
-  [key: string]: any;
-}
-function queryToStr(obj: Obj) {
-  const params = [];
-  for (const key in obj) {
-    params.push(`${key}=${obj[key]}`);
+function queryToStr(data: any, isPrefix?: boolean) {
+  const prefix = isPrefix ? '?' : '';
+
+  const _result = [];
+  for (const key in data) {
+    const value = data[key];
+    // 去掉为空的参数
+    if (['', undefined, null].includes(value)) {
+      continue;
+    }
+    if (value.constructor === Array) {
+      value.forEach((_value) => {
+        _result.push(encodeURIComponent(key) + '[]=' + encodeURIComponent(_value));
+      });
+    } else {
+      _result.push(encodeURIComponent(key) + '=' + encodeURIComponent(value));
+    }
   }
-  return encodeURIComponent(params.join('&'));
+
+  return _result.length ? prefix + _result.join('&') : '';
 }
 
 export default queryToStr;
