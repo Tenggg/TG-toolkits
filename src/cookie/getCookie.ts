@@ -1,6 +1,6 @@
 /**
  * 读取cookie
- * @param key
+ * @param key 属性
  */
 function getCookie(key: string) {
   const cookieStr = unescape(document.cookie);

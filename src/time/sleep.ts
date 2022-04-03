@@ -1,5 +1,5 @@
 /**
- * 暂停代码运行
+ * 定时函数
  * @param milliseconds
  */
 async function sleep(milliseconds: number) {
